@@ -17,10 +17,13 @@ n = int(input("first set: "))
 m = int(input("second set: "))
 
 for i in range(n):
+    num_list_1 = []
     set_1 = set(int(input(f"type the {i + 1} element of set_1: ")))
-print(set_1)
+    num_list_1.append(set_1)
+print(num_list_1)
 
 for i in range(m):
+    num_list_2 = []
     set_2 = set(int(input(f"type the {i + 1} element of set_2: ")))
 print(set_2)
 
