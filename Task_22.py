@@ -11,5 +11,3 @@ set_2 = set([int(input(f"Type a {i + 1} element of set_2: ")) for i in range(m)]
 result = list(set_1.intersection(set_2))
 result.sort()
 print(result)
-
-

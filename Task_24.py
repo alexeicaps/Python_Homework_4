@@ -10,7 +10,13 @@
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль,
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
-dict_example = {"a": 1, "b": [2, 3]}
 
-for k, v in dict_example.items():
-    print(k, "=", v)
+
+n = int(input("Введите колличество кустов: "))
+a = list(map(int, input("Введите колличество ягод: ").split()[:n]))
+print(a)
+max_count = 0
+for i in range(n):
+    if a[i] + a[i - 2] + a[i - 1] > max_count:
+        max_count = a[i] + a[i - 2] + a[i - 1]
+print(max_count)
